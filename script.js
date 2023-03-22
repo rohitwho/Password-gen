@@ -1,8 +1,8 @@
 
-// Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+
 
 
 
@@ -24,8 +24,10 @@ function writePassword() {
   let prompt4 = confirm("Would you like  to add any special symbol?");
 
 
-
-  
+  if (isNaN(length) || length < 8 || length > 128) {
+    alert("Invalid input for password length.");
+    return;
+  } 
 
   if(prompt1 === true){
     charset1 += charset.upperCase;
