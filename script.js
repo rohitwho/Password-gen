@@ -1,12 +1,5 @@
 
 
-var generateBtn = document.querySelector("#generate");
-
-
-
-
-
-
 function writePassword() {
   let charset1 = "";
 
@@ -24,24 +17,24 @@ function writePassword() {
   let prompt4 = confirm("Would you like  to add any special symbol?");
 
 
-  if (isNaN(length) || length < 8 || length > 128) {
-    alert("Invalid input for password length.");
+  if (prompt0 <= 7 || prompt0 >= 129) {
+    alert("Invalid input for password length. Please choose between 8-128 characters");
     return;
-  } 
+  }
 
-  if(prompt1 === true){
+  if (prompt1 === true) {
     charset1 += charset.upperCase;
   }
 
-  if(prompt2 === true){
+  if (prompt2 === true) {
     charset1 += charset.lowerCase;
   }
 
-  if(prompt3 === true){
+  if (prompt3 === true) {
     charset1 += charset.numbers;
   }
 
-  if(prompt4 === true){
+  if (prompt4 === true) {
     charset1 += charset.symbols;
   }
   var password = "";
@@ -62,7 +55,6 @@ function writePassword() {
   passwordText.value = password;
 
 }
-/*
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-*/
+
+
+
