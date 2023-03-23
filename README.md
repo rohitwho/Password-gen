@@ -22,6 +22,6 @@ THEN the password is either displayed in an alert or written to the page
 
 
 
-live url: 
+live url: https://rohitwho.github.io/Password-gen/
 
 <img width="960" alt="2023-03-23" src="https://user-images.githubusercontent.com/123782523/227305033-53ea9de2-5aef-4431-b932-655d4a1f3bdc.png">
