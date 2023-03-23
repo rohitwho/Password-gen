@@ -11,16 +11,17 @@ function writePassword() {
   };
 
   let prompt0 = prompt("Choose a character length between 8-128");
+  if (prompt0 <= 7 || prompt0 >= 129) {
+    alert("Invalid input for password length. Please choose between 8-128 characters");
+    return;
+  }
   let prompt1 = confirm("Would you like to Add Uppercase in your password?");
   let prompt2 = confirm("Would you like to add lowercase in your password? ");
   let prompt3 = confirm("Would you like  to add numbers in your password?");
   let prompt4 = confirm("Would you like  to add any special symbol?");
 
 
-  if (prompt0 <= 7 || prompt0 >= 129) {
-    alert("Invalid input for password length. Please choose between 8-128 characters");
-    return;
-  }
+ 
 
   if (prompt1 === true) {
     charset1 += charset.upperCase;
