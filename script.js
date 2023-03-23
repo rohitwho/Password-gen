@@ -21,7 +21,7 @@ function writePassword() {
   let prompt4 = confirm("Would you like  to add any special symbol?");
 
 
- 
+
 
   if (prompt1 === true) {
     charset1 += charset.upperCase;
@@ -53,7 +53,7 @@ function writePassword() {
 
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = ("Your New secured Password is :  " + password);
 
 }
 
